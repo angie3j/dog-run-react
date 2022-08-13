@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 import './DogCard.scss';
 
-const DogCard = ({DogCard}) => {
+const DogCard = ({dog}) => {
 
     // props deconstructed
     const { dogPic, dogsName, ownersFirstName, ownersLastName, email, telephone } = dog;
