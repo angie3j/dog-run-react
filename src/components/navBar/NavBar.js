@@ -1,45 +1,64 @@
 import { Link } from 'react-router-dom';
-import './NavBar.scss';
+import styles from "./NavBar.scss";
+
+import { BiMenuAltRight } from 'react-icons/bi';
+import { AiOutlineCloseSquare } from 'react-icons/ai';
+
 
 const NavBar = () => {
 
     return(
-        <>
-        <nav className='NavBar'>
-        {/* <div className='logo'>
-            <Link to='/'>
+        <div className={styles.header}>
+            <div className={styles.header__content}>
 
-            </Link>
-        </div> */}
+                <div>
+                    <span className={styles.logo}>Crotona Park Community Dog Run</span>
+                </div>
 
-        <div className='links'>
+                <div>
+                <nav className='nav'>
+                {/* <div className='logo'>
+                    <Link to='/'>
 
-             <ul>
-                <Link to='/events'>Events</Link>
-            </ul>
+                    </Link>
+                </div> */}
 
-            <ul>
-                <Link to='/breeds'>Dog Breeds</Link>
-            </ul>
+                    <ul className={styles.nav__item}>
+                        <Link to='/events'>Events</Link>
+                    </ul>
 
-            <ul>
-                <Link to='/shop'>Shop</Link>
-            </ul>
+                    <ul className={styles.nav__item}>
+                        <Link to='/breeds'>Dog Breeds</Link>
+                    </ul>
 
-            <ul>
-                <Link to='/signin'>Sign In</Link>
-            </ul>
+                    <ul className={styles.nav__item}>
+                        <Link to='/shop'>Shop</Link>
+                    </ul>
 
-            <ul>
-                <Link to='/about'>About Us</Link>
-            </ul>
+                    <ul className={styles.nav__item}>
+                        <Link to='/signin'>Sign In</Link>
+                    </ul>
 
+                    <ul className={styles.nav__item}>
+                        <Link to='/about'>About Us</Link>
+                    </ul>
+
+                    <div className={styles.nav__button}>
+                    </div>
+
+                </nav>
+                </div>
+
+                <div>
+                    <div className={styles.header__button}></div>
+                    <button className={styles.header__toggler}></button>
+                </div>
+            </div>
         </div>
-
-        </nav>
-        </>
     )
-
 }
 
+const Button = () => {
+    return <button className={styles.button}>Button</button>
+}
 export default NavBar; 
