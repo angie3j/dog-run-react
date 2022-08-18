@@ -1,11 +1,7 @@
-import './Home.scss';
+import "./Home.scss";
 
 function Home() {
-    return (
-        <div className='home'>
-            <h1 className='welcome'>Crotona Park Community Dog Run</h1> 
-        </div>
-    )
+  return <div className="home"></div>;
 }
 
-export default Home; 
+export default Home;

@@ -1,0 +1,32 @@
+@import "./variables.scss";
+
+*,
+*::before, // everything before
+*::after {
+  //   everything after
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $poppins;
+  color: $text;
+  height: 200vh;
+}
+
+#root {
+  height: 100%;
+}
+
+button {
+  // reset to default
+  font-family: inherit;
+  outline: none;
+  border: none;
+  background: none;
+  letter-spacing: inherit;
+  color: inherit;
+  font-size: inherit;
+  text-align: inherit;
+  padding: 0;
+}
